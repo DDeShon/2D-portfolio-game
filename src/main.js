@@ -9,5 +9,6 @@ k.loadSprite("spritesheet", "./spritesheet.png", {
     "idle-side": 975,
     "walk-side": { from: 975, to: 978, loop: true, speed: 8 },
     "idle-up": 1014,
+    "walk-up": { from: 1014, to: 1017, loop: true, speed: 8 },
   },
 });
