@@ -19,6 +19,7 @@ k.setBackground(k.Color.fromHex("#311047"));
 
 k.scene("main", async () => {
   const mapData = await (await fetch("./map.json")).json();
+  const layers = mapData.layers;
 });
 
 k.go("main");
