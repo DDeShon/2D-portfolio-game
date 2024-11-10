@@ -21,7 +21,7 @@ k.scene("main", async () => {
   const mapData = await (await fetch("./map.json")).json();
   const layers = mapData.layers;
 
-  const map = k.make([k.sprite("map"), k.pos(0)]);
+  const map = k.make([k.sprite("map"), k.pos(0), k.scale()]);
 });
 
 k.go("main");
