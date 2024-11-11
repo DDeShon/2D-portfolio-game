@@ -1,3 +1,4 @@
+import { scaleFactor } from "./constants";
 import { k } from "./kaboomCtx";
 
 k.loadSprite("spritesheet", "./spritesheet.png", {
@@ -21,7 +22,7 @@ k.scene("main", async () => {
   const mapData = await (await fetch("./map.json")).json();
   const layers = mapData.layers;
 
-  const map = k.make([k.sprite("map"), k.pos(0), k.scale()]);
+  const map = k.make([k.sprite("map"), k.pos(0), k.scale(scaleFactor)]);
 });
 
 k.go("main");
