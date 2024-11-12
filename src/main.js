@@ -29,6 +29,7 @@ k.scene("main", async () => {
     k.area({
       shape: new k.Rect(k.vec2(0, 3), 10, 10),
     }),
+    k.body(),
   ]);
 });
 
