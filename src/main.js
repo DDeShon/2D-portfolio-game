@@ -32,6 +32,11 @@ k.scene("main", async () => {
     k.body(),
     k.anchor("center"),
     k.pos(),
+    k.scale(scaleFactor),
+    {
+      speed: 250,
+      direction: "down",
+    },
   ]);
 });
 
