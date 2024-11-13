@@ -38,7 +38,15 @@ k.scene("main", async () => {
       direction: "down",
       isInDialogue: false,
     },
+    "player",
   ]);
+
+  for (const layer of layers) {
+    if (layer.name === "boundaries") {
+      for (const boundary of layer.objects) {
+      }
+    }
+  }
 });
 
 k.go("main");
