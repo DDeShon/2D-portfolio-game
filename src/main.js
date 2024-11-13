@@ -36,6 +36,7 @@ k.scene("main", async () => {
     {
       speed: 250,
       direction: "down",
+      isInDialogue: false,
     },
   ]);
 });
