@@ -4,5 +4,17 @@ export function displayDialogue(text, onDisplayEnd) {
     const dialogue = document.getElementById("dialogue");
 
     dialogueUI.style.display = "block";
+
+    // handles scrolling text
+    let index = 0;
+    let currentText = "";
+    const intervalRef = setInterval(() => {
+      if (index < text.length) {
+        currentText += text[index];
+        dialogue.innerHTML = currentText;
+        index++;
+        return;
+      }
+    });
   }
 }
