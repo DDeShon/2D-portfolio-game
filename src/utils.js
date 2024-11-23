@@ -15,6 +15,8 @@ export function displayDialogue(text, onDisplayEnd) {
         index++;
         return;
       }
+
+      clearInterval(intervalRef);
     });
   }
 }
