@@ -19,4 +19,11 @@ export function displayDialogue(text, onDisplayEnd) {
       clearInterval(intervalRef);
     }, 5);
   }
+
+  const closeBtn = document.getElementById("close");
+
+  function onCloseBtnClick() {
+    onDisplayEnd();
+    dialogueUI.style.display = "none";
+  }
 }
