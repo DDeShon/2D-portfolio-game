@@ -20,6 +20,7 @@ export function displayDialogue(text, onDisplayEnd) {
     }, 5);
   }
 
+  // handles close button functions
   const closeBtn = document.getElementById("close");
 
   function onCloseBtnClick() {
