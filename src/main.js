@@ -61,6 +61,7 @@ k.scene("main", async () => {
           });
         }
       }
+      continue;
     }
   }
 });
