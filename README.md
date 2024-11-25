@@ -1,3 +1,3 @@
 ﻿# 2D-portfolio-game
 
-This project is a 2-Dimensional gamified version of a developer portfolio.
+This project is a 2-Dimensional gamified prototype of a developer portfolio.
