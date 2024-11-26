@@ -78,6 +78,7 @@ k.scene("main", async () => {
     }
   }
 
+  // sets up the main camera
   k.onUpdate(() => {
     k.camPos(player.pos.x, player.pos.y + 100);
   });
