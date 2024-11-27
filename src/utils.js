@@ -33,3 +33,7 @@ export function displayDialogue(text, onDisplayEnd) {
 
   closeBtn.addEventListener("click", onCloseBtnClick);
 }
+
+export function setCamScale(k) {
+  const resizeFactor = k.width() / k.height();
+}
