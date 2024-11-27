@@ -1,6 +1,6 @@
 import { scaleFactor } from "./constants";
 import { k } from "./kaboomCtx";
-import { displayDialogue } from "./utils";
+import { displayDialogue, setCamScale } from "./utils";
 
 k.loadSprite("spritesheet", "./spritesheet.png", {
   sliceX: 39,
@@ -77,6 +77,12 @@ k.scene("main", async () => {
       }
     }
   }
+
+  setCamScale(k);
+
+  k.onResize(() => {
+    setCamScale(k);
+  });
 
   // sets up the main camera
   k.onUpdate(() => {
