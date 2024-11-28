@@ -96,7 +96,11 @@ k.scene("main", async () => {
     const worldMousePos = k.toWorld(k.mousePos());
     player.moveTo(worldMousePos, player.speed);
 
+    // handles character facing direction
     const mouseAngle = player.pos.angle(worldMousePos);
+
+    const lowerBound = 50;
+    const upperBound = 125;
   });
 });
 
