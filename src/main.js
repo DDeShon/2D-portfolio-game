@@ -115,7 +115,11 @@ k.scene("main", async () => {
       mouseAngle > lowerBound &&
       mouseAngle < upperBound &&
       player.curAnim() !== "walk-down"
-    )
+    ) {
+      player.play("walk-down");
+      player.direction = "down";
+      return;
+    }
   });
 });
 
