@@ -113,8 +113,8 @@ k.scene("main", async () => {
     }
 
     if (
-      mouseAngle > -lowerBound &&
-      mouseAngle < -upperBound &&
+      mouseAngle < -lowerBound &&
+      mouseAngle > -upperBound &&
       player.curAnim() !== "walk-down"
     ) {
       player.play("walk-down");
