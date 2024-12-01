@@ -122,6 +122,13 @@ k.scene("main", async () => {
       return;
     }
 
+    if (Math.abs(mouseAngle) > upperBound) {
+      player.flipX = false;
+      if (player.curAnim() !== "walk-side") player.play("walk-side");
+      player.direction = "right";
+      return;
+    }
+
     if (Math.abs(mouseAngle) < lowerBound) {
       player.flipX = true;
       if (player.curAnim() !== "walk-side") player.play("walk-side");
