@@ -146,6 +146,8 @@ k.scene("main", async () => {
       player.play("idle-up");
       return;
     }
+
+    player.play("idle-side");
   });
 });
 
