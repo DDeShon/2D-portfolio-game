@@ -142,6 +142,10 @@ k.scene("main", async () => {
       player.play("idle-down");
       return;
     }
+    if (player.direction === "up") {
+      player.play("idle-up");
+      return;
+    }
   });
 });
 
