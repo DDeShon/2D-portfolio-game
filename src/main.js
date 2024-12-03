@@ -136,6 +136,13 @@ k.scene("main", async () => {
       return;
     }
   });
+
+  k.onMouseRelease(() => {
+    if (player.direction === "down") {
+      player.play("idle-down");
+      return;
+    }
+  });
 });
 
 k.go("main");
