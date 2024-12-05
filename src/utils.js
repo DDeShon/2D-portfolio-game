@@ -25,7 +25,7 @@ export function displayDialogue(text, onDisplayEnd) {
 
   function onCloseBtnClick() {
     onDisplayEnd();
-    dialogueUI.style.display = "none";
+    dialogueUI.style.display = "hidden";
     dialogue.innerHTML = "";
     clearInterval(intervalRef);
     closeBtn.removeEventListener("click", onCloseBtnClick);
