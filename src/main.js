@@ -154,6 +154,10 @@ k.scene("main", async () => {
   }
 
   k.onMouseRelease(stopAnims);
+
+  k.onKeyRelease(() => {
+    stopAnims();
+  });
 });
 
 k.go("main");
