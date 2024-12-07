@@ -140,7 +140,7 @@ k.scene("main", async () => {
     }
   });
 
-  k.onMouseRelease(() => {
+  function stopAnims() {
     if (player.direction === "down") {
       player.play("idle-down");
       return;
