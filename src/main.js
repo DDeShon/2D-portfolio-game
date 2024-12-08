@@ -173,6 +173,17 @@ k.scene("main", async () => {
         nbOfKeyPressed++;
       }
     }
+
+    if (nbOfKeyPressed > 1) return;
+
+    if (player.isInDialogue) return;
+    if (keyMap[0]) {
+      player.flipX = false;
+      if (player.curAnim() !== "walk-side") player.play("walk-side");
+      player.direction = "right";
+      player.move(player.speed, 0);
+      return;
+    }
   });
 });
 
