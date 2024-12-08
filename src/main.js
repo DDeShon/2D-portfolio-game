@@ -166,6 +166,13 @@ k.scene("main", async () => {
       k.isKeyDown("up"),
       k.isKeyDown("down"),
     ];
+
+    let nbOfKeyPressed = 0;
+    for (const key of keyMap) {
+      if (key) {
+        nbOfKeyPressed++;
+      }
+    }
   });
 });
 
