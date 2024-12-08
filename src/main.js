@@ -158,6 +158,15 @@ k.scene("main", async () => {
   k.onKeyRelease(() => {
     stopAnims();
   });
+
+  k.onKeyDown((key) => {
+    const keyMap = [
+      k.isKeyDown("right"),
+      k.isKeyDown("left"),
+      k.isKeyDown("up"),
+      k.isKeyDown("down"),
+    ];
+  });
 });
 
 k.go("main");
