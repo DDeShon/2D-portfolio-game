@@ -188,6 +188,10 @@ k.scene("main", async () => {
     if (keyMap[1]) {
       player.flipX = true;
       if (player.curAnim() !== "walk-side") player.play("walk-side");
+      player.direction = "left";
+      player.move(-player.speed, 0);
+      return;
+    }
   });
 });
 
