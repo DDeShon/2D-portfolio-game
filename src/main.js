@@ -199,6 +199,12 @@ k.scene("main", async () => {
       player.move(0, -player.speed);
       return;
     }
+
+    if (keyMap[3]) {
+      if (player.curAnim() !== "walk-down") player.play("walk-down");
+      player.direction = "down";
+      player.move(0, player.speed);
+    }
   });
 });
 
