@@ -184,6 +184,10 @@ k.scene("main", async () => {
       player.move(player.speed, 0);
       return;
     }
+
+    if (keyMap[1]) {
+      player.flipX = true;
+      if (player.curAnim() !== "walk-side") player.play("walk-side");
   });
 });
 
