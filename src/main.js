@@ -159,6 +159,7 @@ k.scene("main", async () => {
     stopAnims();
   });
 
+  // handles keyboard controlled player movement
   k.onKeyDown((key) => {
     const keyMap = [
       k.isKeyDown("right"),
