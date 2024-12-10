@@ -92,7 +92,7 @@ k.scene("main", async () => {
     k.camPos(player.pos.x, player.pos.y + 100);
   });
 
-  // handles player movement
+  // handles mouse controlled player movement
   k.onMouseDown((mouseBtn) => {
     if (mouseBtn !== "left" || player.isInDialogue) return;
 
