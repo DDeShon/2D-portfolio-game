@@ -19,5 +19,5 @@ export const dialogueData = {
   Kaboom.js by watching some of my tutorials <a href="https://youtube.com/@jslegenddev" target="_blank">here</a>.`,
   library: `There are a lot of programming books on my shelves. There is even one in French (I also speak French btw).
   I probably only read one of them. Who else compulsively buys technical books without ever finishing them?`,
-  exit: `If you want to exit JSLegendDev's portfolio, just close the tab.`,
+  exit: `If you want to exit Improbus' portfolio, just close the tab.`,
 };
