@@ -3,7 +3,7 @@ import { k } from "./kaboomCtx";
 import { displayDialogue, setCamScale } from "./utils";
 
 k.loadSprite("spritesheet", "./spritesheet.png", {
-  sliceX: 39,
+  sliceX: 38,
   sliceY: 31,
   anims: {
     "idle-down": 936,
